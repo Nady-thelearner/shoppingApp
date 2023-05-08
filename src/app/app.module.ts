@@ -6,13 +6,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AuthComponent } from './auth/auth.component';
 
-import { RecipesModules } from './recipes/recipe.module';
 import { SharedModule } from './shared/shared.module';
-import { ShoppingListModule } from './shopping-list/shopping-list.module';
+
 import { CoreModule } from './core.module';
-import { AuthModule } from './auth/auth.module';
 
 // import { TestToggelComponent } from './test-toggel/test-toggel.component';
 // import { basicHighLightDirective } from './test-toggel/directive/basic-highlight.directive';
@@ -25,8 +22,6 @@ import { AuthModule } from './auth/auth.module';
     AppComponent,
     HeaderComponent,
 
-
-
     //  TestToggelComponent,
     //  basicHighLightDirective,
     //  AppAdvDirectiveDirective,
@@ -37,14 +32,13 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    RecipesModules,
+    // RecipesModules,
     SharedModule,
-    ShoppingListModule,
+    // ShoppingListModule,
     CoreModule,
-    AuthModule
+    // AuthModule,
   ],
   exports: [FormsModule, ReactiveFormsModule],
 
